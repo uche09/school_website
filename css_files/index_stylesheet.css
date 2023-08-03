@@ -1,0 +1,441 @@
+/* imported font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ html {
+     scroll-behavior: smooth;
+ }
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing:border-box;
+    font-size: 2rem;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../photos/body.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+ 
+/* Header (logo and title) */
+.header {
+    height:177px;
+    width:100%;
+    padding: 1rem 0;
+    background:#00ffff;
+    display:flex;
+    align-items: center; 
+    overflow: auto;
+}
+
+.logo, .tit{
+    display: inline-block;
+}
+
+.logo1{
+     width: 12rem;
+}
+
+.tit {
+    font-size: 1.7rem;
+    color: #0a8e00;
+    margin-left: 1.3em;
+}
+
+/* navigation menu */
+nav {
+    margin: 0.7rem 0.4rem;
+    width: 80vw;
+    height: 5.5rem;
+    position: sticky;
+    top: 1rem;
+    left: 100%;
+    background-color: rgba(0,0,0,0.47);
+    border-radius: 1.5rem;
+    font-size: 1.85rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: bold;
+    z-index: 1;
+    overflow: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #11f100;
+}
+nav a:visited {
+    colr: #0a8e00;
+}
+nav a:hover, nav a:focus{
+    color: #ce2a21;
+    text-decoration: underline;
+    font-size: 2.275rem;
+}
+nav a:active {
+    coor: #ce2a21;
+    text-decolation: underline;
+    font-size: 2.275rem;
+}
+
+
+/* Admission for 100level */
+.admiss {
+    margin: 1.5rem 0 10rem 0; 
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../photos/div1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    padding: 1rem 1.5rem;
+    font-size: 2.5rem;
+}
+.admiss img {
+    height: 14rem;
+    width: 14rem;
+    border-radius: 7rem;
+    position: relative;
+    top: 0;
+    left: 36%;
+} 
+.admiss p {
+    text-align: justify;
+}
+.admiss h2 {
+    text-align: center;
+}
+.admiss a{
+    color: #ff9e00;
+    text-decoration: none;
+}
+.admiss a:visited{
+    color: #d100d6;
+}
+
+/* Master degree */
+.masters {
+    margin: 6rem 0 10rem 0; 
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../photos/div2.jpg");
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    padding: 5rem 1.5rem 1rem 1.5rem;
+    height: 26rem;
+    font-size: 2.5rem;
+}
+.masters p {
+    text-align: justify;
+    font-size: 2.8rem;
+}
+.masters h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.masters a {
+    color: #ff9e00;
+    text-decoration: none;
+}
+.masters a:visited {
+    color: #d100d6;
+}
+
+
+/* vision */
+.vision {
+    margin: 7rem 0 10rem 0; 
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../photos/div3.jpg");
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    padding: 5rem 1.5rem 2rem 1.5rem;
+    font-size: 2.5rem;
+    
+}
+.vision p {
+    text-align: justify;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    letter-spacing: 0.05rem
+    word-spacing: 0.2rem;
+}
+.vision h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.vision span {
+    font-weight: bold;
+}
+
+
+/* vice chancellor */
+.vice {
+    background-color: rgba(0,0,0,0.1);
+    margin: 7rem 0 10rem 0; 
+}
+.vice img {
+    margin: 1.5rem 14% 1.5rem 14%;
+    height: 1100px;
+}
+
+
+/* Dean Of Students */
+.dean {
+    background-color: rgba(0,0,0,0.1);
+    margin: 7rem 0 10rem 0;
+    padding-bottom: 5rem;
+}
+.dean img {
+    margin: 1.5rem 9.5% 0 9.5%;
+    height: 1100px;
+}
+.dean figcaption {
+    color: whitesmoke;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.dean figcaption h3{
+    line-height: 1.4rem;
+}
+.dean figcaption h4{
+    border-bottom: solid 5px whitesmoke;
+    border-colr: whitesmoke;
+    display: inline;
+    font-size: 1.6rem;
+}
+
+/* colleges */
+.col {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+.click {
+    color: whitesmoke;
+    font-size: 2rem;
+    margin: 0rem 1rem 5rem 1rem;
+    display: block;
+}
+
+/* College of Health */
+.CHS img {
+    height: 900px;
+    margin: 1.5rem 9% 0 14%;
+}
+.CHS h3 {
+    position: relative;
+    bottom: 12rem;
+    left: 8.9rem;
+    background-color: rgba(0,0,0,0.4);
+    color: whitesmoke;
+    font-size: 3.3rem;
+    height: 5rem;
+    padding: 3rem 0;
+    display: inline-block;
+    width: 68%;
+    text-align: center;
+}
+
+/* College of Natural And Applied Science */
+.CNAS img {
+    height: 900px;
+    width: 800px;
+    margin: 1.5rem 9% 0 9%;
+}
+.CNAS h3 {
+    position: relative;
+    bottom: 15rem;
+    left: 6rem;
+    background-color: rgba(0,0,0,0.4);
+    color: whitesmoke;
+    font-size: 3.5rem;
+    height: 7rem;
+    width: 79%;
+    padding: 3rem 0;
+    dispay: inline-block;
+    text-align: center;
+}
+
+/* College of Computing And Telecommunication */
+.CCT img {
+    height: 700px;
+    width: 98%;
+    margin: 1.5rem 1% 0 1%;
+}
+.CCT h3 {
+    position: relative;
+    bottom: 15rem;
+    left: 3rem;
+    background-color: rgba(0,0,0,0.4);
+    color: whitesmoke;
+    font-size: 3.5rem;
+    height: 7rem;
+    width: 90%;
+    padding: 3rem 0;
+    dispay: inline-block;
+    text-align: center;
+}
+
+/* College of Law */
+.law img {
+    height: 600px;
+    width: 98%;
+    margin: 1.5rem 1% 0 1%;
+}
+.law h3 {
+    position: relative;
+    bottom: 12rem;
+    left: 3rem;
+    background-color: rgba(0,0,0,0.4);
+    color: whitesmoke;
+    font-size: 4rem;
+    height: 5rem;
+    padding: 3rem 0;
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+}
+
+/* College of Management And Social Science */
+.CMSS img {
+    height: 1100px;
+    margin: 1.5rem 8% 0 8%;
+}
+.CMSS h3 {
+    position: relative;
+    bottom: 15rem;
+    left: 5.8rem;
+    background-color: rgba(0,0,0,0.4);
+    color: whitesmoke;
+    font-size: 3.5rem;
+    height: 7rem;
+    width: 81%;
+    padding: 3rem 0;
+    dispay: inline-block;
+    text-align: center;
+}
+
+.CMSS .line {
+    border-bottom: 10px solid whitesmoke;
+    width: 100%;
+    position: relative;
+    bottom: 7rem;
+    margin-bottom: 7rem;
+}
+
+
+/* footer */
+
+/* Award */
+.award {
+    color: whitesmoke;
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+}
+.award h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+.award .line {
+    border-bottom: 6px solid #11f100;
+    border-radius: 5px;
+    width: 23rem;
+    position: relative;
+    top: -4rem;
+    left: 19rem;
+    z-index: -1; 
+}
+.award p {
+    margin: 2rem 1rem 2rem 2rem;
+    text-align: justify;
+    font-size: 1.5rem;
+    
+}
+.award img {
+    height: 60px;
+    margin-bottom: -1rem;
+    disply: inline-block;
+}
+.award .gold {
+    color: #e69712;
+    font-style: italic;
+}
+.award li {
+   margin-left: 4.5rem;
+   margin-top: 0;
+   font-size: 0.9rem;
+}
+
+/* Social media */
+.social {
+    background: #00000031;
+    margin-bottom: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social img {
+    height: 120px;
+}
+.social .fb {
+    height: 100px;
+}
+
+
+/* contact info */
+.info {
+    color: whitesmoke;
+    padding: 2rem;
+}
+.info img {
+    height: 400px;
+    margin-bottom: 4rem;
+}
+.info h3 {
+    color: green;
+    font-size: 2.4rem;
+    font-family: ariel;
+}
+.info .line {
+    border-bottom: 2.5px solid white;
+    width: 10rem;
+    position: relative;
+    left: 0.6rem;
+    margin-top: -0.1rem;
+    margin-bottom: 3rem;
+}
+.info p {
+    font-size: 1.4rem;
+    margin-bottom: 6rem;
+    font-style: italic;
+}
+.info .copyright {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    display: block;
+    text-align: center;
+}
+
+.arrow_up{
+    background: #00000061;
+    display: inline;
+    position: fixed;
+    bottom: 7rem;
+    right: 2%;
+}
+.arrow_up img{
+    height: 110px;
+}
+.arrow_up img:hover {
+    height: 126.5px;
+    background: inherit;
+    background-position: cover;
+    background-repeat: no-repeat;
+}

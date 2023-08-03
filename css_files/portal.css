@@ -1,0 +1,306 @@
+/* imported font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ html {
+     scroll-behavior: smooth;
+ }
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing:border-box;
+    font-size: 2rem;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../photos/body.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+ 
+/* Header (logo and title) */
+.header {
+    height:177px;
+    width:100%;
+    padding: 1rem 0;
+    background:#00ffff;
+    display:flex;
+    align-items: center; 
+    overflow: auto;
+}
+
+.logo, .tit{
+    display: inline-block;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.logo1{
+     width: 12rem;
+     flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.tit {
+    font-size: 1.7rem;
+    color: #0a8e00;
+    margin-left: 1.3em;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/* navigation menu */
+nav {
+    margin: 0.7rem 0.4rem;
+    margin-bottom: 7rem;
+    width: 80vw;
+    height: 5.5rem;
+    position: sticky;
+    top: 1rem;
+    left: 100%;
+    background-color: rgba(0,0,0,0.47);
+    border-radius: 1.5rem;
+    font-size: 1.85rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: bold;
+    z-index: 1;
+    overflow: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+nav a {
+    text-decoration: none;
+    color: #11f100;
+    margin-left: 1rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+nav a:visited {
+    color: #0a8e00;
+}
+nav a:hover, nav a:focus{
+    color: #ce2a21;
+    text-decoration: underline;
+    font-size: 2.275rem;
+}
+nav a:active, nav a:current {
+    color: #ce2a21;
+    text-decolation: underline;
+    font-size: 2.275rem;
+}
+
+    /* Parent div of login */
+.main {
+    background-color: #0000005e;
+    width: 75%;
+    margin: auto;
+    overflow: auto;
+    padding: 7rem 0 2rem;
+    margin-bottom: 6rem;
+}
+        
+     /* School Name */
+.title {
+    width: 95%;
+    justify-content: center;
+    margin: auto;
+    overflow: auto;
+}
+
+.title h1, .title h2 {
+    font-size: 4rem;
+    color: whitesmoke;
+    font-family: cambria, times;
+    text-align: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+    /* login input */
+.icon {
+    display: flex;
+    justify-content: center;
+    margin: 3em 0.2em 0 0.2em;
+}
+
+.icon2{
+    display: flex;
+    justify-content: center;
+    margin: 0 0.2em;
+}
+
+.input{
+    width: 86%;
+    height: 82px;
+    background-color: #00000089;
+    flex-basis: 86%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border-radius: 0 41px 41px 0;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+input, button, textarea{
+    font: inherit;
+}
+
+.input::placeholder{
+    font-weight: bold;
+    color: whitesmoke;    
+    text-align: center;
+    opacity: 0.7;
+    padding-left: 4px;
+    font-size: 2.5rem;
+}
+
+    /* input icon */
+.form img{
+    width: 6vh;
+    height: 82px;
+    background-color: #00000089;
+    padding: 0;
+    border-right: solid 3px whitesmoke;
+    border-radius: 41px 0 0 41px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+
+    /* checkbox */
+span {
+    color: whitesmoke;
+    margin: 0.2rem 32% 0;
+    line-height: 2.5rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+span input {
+    width: 2rem;
+    height: 2rem;
+}
+
+    /* button */
+.form button {
+    width: 10rem;
+    height: 5rem;
+    background: #35596a;
+    color: whitesmoke;
+    border-radius: 40px;
+    margin: 0.2rem 35% 1rem;
+    border: none;
+    cursor: pointer;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.form botton:hover, .form button:focus{
+    background: whitesmoke;
+    color: #35596a;
+    width: 12rem;
+    height: 5.5rem;
+}
+
+    /* register link */
+.register{
+    margin: 5rem 2rem 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    color: whitesmoke;
+    margin-bottom: 2.5rem;
+}
+.register a {
+    color: #e69712;
+}
+.register a:visited{
+    color: #9d00a1f3;
+}
+
+.register a:hover, .register a:focus{
+    cursor: pointer;
+}
+
+.register a:visited:hover{
+    color: whitesmoke;
+}
+
+
+
+/* footer */
+
+/* Social media */
+.social {
+    background: #00000061;
+    margin-bottom: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social img {
+    height: 120px;
+}
+.social .fb {
+    height: 100px;
+}
+
+
+/* contact info */
+.info {
+    color: whitesmoke;
+    padding: 2rem;
+}
+.info img {
+    height: 400px;
+    margin-bottom: 4rem;
+}
+.info h3 {
+    color: green;
+    font-size: 2.4rem;
+    font-family: ariel;
+}
+.info .line {
+    border-bottom: 2.5px solid white;
+    width: 10rem;
+    position: relative;
+    left: 0.6rem;
+    margin-top: -0.1rem;
+    margin-bottom: 3rem;
+}
+.info p {
+    font-size: 1.4rem;
+    margin-bottom: 6rem;
+    font-style: italic;
+}
+.info .copyright {
+    font-size: 1rem;
+    opacity: 0.7;
+    display: block;
+    text-align: center;
+}
+
+.arrow_up{
+    background: #00000061;
+    display: inline;
+    position: fixed;
+    bottom: 7rem;
+    right: 2%;
+}
+.arrow_up img{
+    height: 110px;
+}
+.arrow_up img:hover {
+    height: 126.5px;
+    background: inherit;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
